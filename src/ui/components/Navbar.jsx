@@ -3,8 +3,6 @@ import { Link, NavLink, useNavigate } from "react-router"
 export const Navbar = () => {
   const navigate = useNavigate()
 
-  console.log(navigate)
-
   const onLogout = () => {
     navigate('/login', {
       replace: true
