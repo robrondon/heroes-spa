@@ -28,7 +28,7 @@ export const SearchPage = () => {
         <div className="col-5">
           <h4>Searching</h4>
           <hr />
-          <form onSubmit={onSearch}>
+          <form onSubmit={onSearch} aria-label='form'>
             <input
               type="text"
               placeholder="Search a hero"
@@ -50,7 +50,7 @@ export const SearchPage = () => {
             </div>
           )}
           {showError && (
-            <div className="alert alert-danger animate__animated animate__fadeIn">
+            <div className="alert alert-danger animate__animated animate__fadeIn" aria-label='alert-danger'>
               Not hero with <b>{q}</b>
             </div>
           )}
